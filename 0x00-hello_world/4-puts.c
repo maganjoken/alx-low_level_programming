@@ -4,11 +4,11 @@
  * main - print the string in the put function
  *
  * Description: using the main function
- * this program prints "Programing is like building a muiltilingual puzzle
+ * this program prints "Programming is like building a muiltilingual puzzle
  * Return: 0
  */
 int main(void)
 {
-	puts("\"programing is like building a muiltilingual puzzle");
+	puts("\"programming is like building a muiltilingual puzzle");
 	return (0);
 }
