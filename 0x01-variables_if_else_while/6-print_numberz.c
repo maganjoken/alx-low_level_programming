@@ -1,19 +1,19 @@
-#include<stdio.h> 
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always success
+ */
+int main(void)
+{
 
-int main(){ 
+	int d;
 
-	int num; 
+	for (d = '0'; d <= '9'; d++)
+		putchar(d);
+		putchar('\n');
 
-	scanf("%d",&num); 
-
-	while(num){ 
-
-		  printf("%d\n",num%10); 
-
-		    num=num/10; 
-
-		     } 
-
-	return 0; 
-
-} 
+	return (0);
+}
