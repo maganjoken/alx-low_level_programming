@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * Description: 'function to check for a sign of a number'
+ * main - Entry point
+ * Description: function to check for a sign of a number
  * @c: is the int that will use for the argument of the function
  * Return: 0
  */
