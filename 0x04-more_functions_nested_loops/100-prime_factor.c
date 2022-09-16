@@ -1,41 +1,77 @@
-#include "main.h"                                                                                                                       
+#include <stdio.h>
 
-/**                                                                                                                                     
+#include <math.h>
+
+
+
+/**
  *
- *  * print_diagonal - draws a diagonal line on the terminal                                                                               
+ *  * main - finds and prints the largest prime factor of the number 612852475143
  *
- *   * @n: number of times the character \ should be printed                                                                                
+ *   * followed by a new line
  *
- *    */                                                                                                                                     
+ *    * Return: Always 0 (Success)
+ *
+ *     */
 
-void print_diagonal(int n)                                                                                                              
+int main(void)
 
-{                                                                                                                                       
+{
 
-	        if (n <= 0)                                                                                                                     
+		long int n;
 
-			        {                                                                                                                               
+			long int max;
 
-					                _putchar('\n');                                                                                                         
+				long int i;
 
-							        }                                                                                                                               
 
-		        else                                                                                                                            
 
-				        {                                                                                                                               
+					n = 612852475143;
 
-						                int i, j;                                                                                                               
+						max = -1;
 
-								                                                                                                                                        
 
-								                for (i = 0; i < n; i++)                                                                                                 
 
-											                {                                                                                                                       
+							while (n % 2 == 0)
 
-														                        for (j = 0; j < n; j++)                                                                                         
+									{
 
-																		                        {                                                                                                               
+												max = 2;
 
-																						                                if (j == i)                                                                                             
+														n /= 2;
 
-																											                                        _putchar('\\');
+															}
+
+
+
+								for (i = 3; i <= sqrt(n); i = i + 2)
+
+										{
+
+													while (n % i == 0)
+
+																{
+
+																				max = i;
+
+																							n = n / i;
+
+																									}
+
+														}
+
+
+
+									if (n > 2)
+
+												max = n;
+
+
+
+										printf("%ld\n", max);
+
+
+
+											return (0);
+
+}
