@@ -5,24 +5,19 @@
  * @s: string
  * @c: character to search
  *
- * Return: pointer to the first occurrence of the character c in the strings
+ * Return: pointer to spot in s with c or null
  */
 
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0') /*Declaring WHILE*/
+	int i;
+
+	for (i =0; *(s + i); i++)
 	{
-		if (*s == c) /*if s == c*/
-		{
-			return (s); /*return s*/
-		}
-
-		++s;
+		if (*(s + i) == c)
+			return (s + i);
 	}
-	if (*s == c)
-	}
-		return (s);
-	}
-
-	return (0);/* values null*/
+	if (*(s + i) == c)
+		return (s + i);
+	return (0);
 }
