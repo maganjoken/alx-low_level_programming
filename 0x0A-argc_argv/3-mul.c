@@ -3,14 +3,15 @@
 #include <stdlib.h>
 
 /**
- * main - prints the multipilication of two integers
- * @argc: counts arguments
- * @argv: argument vector
- * Return: Always 0
- */
+  * main - Prints the multiplication of two args numbers
+  * @argc: argument count
+  * @argv: argument vector
+  *
+  * Return: Always zero
+  */
 int main(int argc, char *argv[])
 {
-	int n1 = 0; n2 = 0;
+	int n1 = 0, n2 = 0;
 
 	if (argc == 3)
 	{
