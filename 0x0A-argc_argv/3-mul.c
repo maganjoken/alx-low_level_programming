@@ -6,6 +6,7 @@
  * main - prints the multipilication of two integers
  * @argc: counts arguments
  * @argv: argument vector
+ *
  * Return: Always 0
  */
 int main(int argc, char *argv[])
