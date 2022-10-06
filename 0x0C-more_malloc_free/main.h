@@ -1,6 +1,10 @@
 #ifndef FILE_MAIN
 #define FILE_MAIN
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <limits.h>
+
 /**
  * file: main.h
  * Auth: maganjoken
