@@ -6,7 +6,11 @@
  */
 int get_endainness(void)
 {
-	int n = 1;
+	int num;
 
-	return (*((char *) &n) + '0');
+	num = 1;
+	if(*(char *)&num == 1)
+		return (1);
+	else
+		return (0);
 }
